@@ -247,7 +247,7 @@ func (s *executor) Prepare(globalConfig *common.Config, config *common.RunnerCon
 		return err
 	}
 
-	s.Println("Waiting VM to become responsive...")
+	s.Println("Waiting for VM to become responsive...")
 	err = s.verifyMachine(s.vmName, s.sshPort)
 	if err != nil {
 		return err
